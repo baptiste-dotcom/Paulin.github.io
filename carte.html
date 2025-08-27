@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notre Monde</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    #map { height: 900px; }
+  </style>
+</head>
+  <h2>Notre Monde</h2>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    var map = L.map('map').setView([20, 0], 2);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    L.marker([52.37403, 4.88969]).addTo(map).bindPopup("Amsterdam");
+    L.marker([48.20849, 16.37208]).addTo(map).bindPopup("Vienne");
+    L.marker([45.4112, -75.6981]).addTo(map).bindPopup("Ottawa");
+    L.marker([43.7001, -79.4163]).addTo(map).bindPopup("Toronto");
+    L.marker([46.81228, -71.21454]).addTo(map).bindPopup("Québec");
+    L.marker([59.3326, 18.0649]).addTo(map).bindPopup("Stockholm");
+    L.marker([50.85045, 4.34878]).addTo(map).bindPopup("Bruxelles");
+    L.marker([55.95206, -3.19648]).addTo(map).bindPopup("Edimbourg");
+    L.marker([36.7202, -4.4203]).addTo(map).bindPopup("Malaga");
+    L.marker([36.1447, -5.3526]).addTo(map).bindPopup("Gibraltar");
+    L.marker([50.6333, 3.0667]).addTo(map).bindPopup("Lille");
+    L.marker([50.7766, 6.0834]).addTo(map).bindPopup("Aix-la-chapelle");
+    L.marker([64.1355, -21.8954]).addTo(map).bindPopup("Reykjavik");
+  </script>
+  <script src="script.js"></script>
+  <a href="Site 1.html" class="retour">← Retour à l’accueil</a>
+</body>
+</html>

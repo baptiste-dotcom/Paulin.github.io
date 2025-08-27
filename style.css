@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 24px "Palatino Linotype", serif;
+  background: linear-gradient(to right, #2c3e50, #3498db);
+  color: white;
+}
+
+.menuderoulant {
+  list-style: none;
+  padding: 10px;
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.menuderoulant li {
+  position: relative;
+  text-align: center;
+}
+
+.menuderoulant li a {
+  display: block;
+  color: #FFFFFF;
+  background: #0085CA;
+  padding: 6px 10px;
+  border-right: 1px solid #FFFFFF;
+  text-decoration: none;
+  width: 200px;
+}
+
+.menuderoulant li a:hover {
+  background-color: #199BD2;
+}
+
+.menuderoulant li a:active {
+  background-color: #F88E55;
+}
+
+.sousmenu {
+  list-style-type: none;
+  display: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+}
+
+.sousmenu li a {
+  display: block;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #F88E55;
+  padding: 6px 10px;
+}
+
+.sousmenu li a:hover {
+  background-color: #199BD2;
+}
+
+.menuderoulant li:hover .sousmenu {
+  display: block;
+}
+
+.menuderoulant li img {
+  width: 180px;
+  height: auto;
+  margin-top: 20px;
+  animation: bounce 5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(100px); }
+}
+
+.avion {
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.coeur {
+  position: absolute;
+  top: 400px;
+  left: 600px;
+  width: 150px;
+}
+
+.manette {
+  width: 150px;
+  position: absolute;
+  top: 400px;
+  right: 600px;
+
+}
+
+.avion {
+  animation: bounce 5s ease-in-out infinite;
+}
+
+.coeur {
+  animation: bounce 5s ease-in-out infinite;
+}
+
+.manette {
+  animation: bounce 5s ease-in-out infinite;
+}
+
+.retour {
+  display: inline-block;
+  background-color: #0085CA;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  margin: 20px auto;
+}
+
+.retour:hover {
+  background-color: #199BD2;
+}
